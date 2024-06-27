@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{404B186C-ED05-43BA-897C-1CD074311D5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>finalproject</RootNamespace>
+    <AssemblyName>finalproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminloginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminloginform.Designer.cs">
+      <DependentUpon>adminloginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_options.Designer.cs">
+      <DependentUpon>admin_options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment_drhoseini.cs" />
+    <Compile Include="assistants.cs" />
+    <Compile Include="bimar form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bimar form.Designer.cs">
+      <DependentUpon>bimar form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bimar.cs" />
+    <Compile Include="bimarinformationbyassistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bimarinformationbyassistant.Designer.cs">
+      <DependentUpon>bimarinformationbyassistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bimarinformationbydoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bimarinformationbydoctor.Designer.cs">
+      <DependentUpon>bimarinformationbydoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_the_darsad_of_sahamdaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_the_darsad_of_sahamdaran.Designer.cs">
+      <DependentUpon>change_the_darsad_of_sahamdaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor.cs" />
+    <Compile Include="doctorassistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorassistant.Designer.cs">
+      <DependentUpon>doctorassistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctors_private_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctors_private_form.Designer.cs">
+      <DependentUpon>doctors_private_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="former_bimar.cs" />
+    <Compile Include="ISaveLoadManageAppointments.cs" />
+    <Compile Include="ISaveLoadManageAppointments_assistants.cs" />
+    <Compile Include="ISaveLoadManagebimar.cs" />
+    <Compile Include="ISaveLoadManagedatetimesdrhoseini.cs" />
+    <Compile Include="ISaveLoadManagedoctors.cs" />
+    <Compile Include="ISaveLoadManageformerbimar.cs" />
+    <Compile Include="ISaveLoadManagesahamdaran.cs" />
+    <Compile Include="loginbimarsforvisiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginbimarsforvisiting.Designer.cs">
+      <DependentUpon>loginbimarsforvisiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_form_of_doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form_of_doctors.Designer.cs">
+      <DependentUpon>login_form_of_doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manageadmin.cs" />
+    <Compile Include="ManageAppointments.cs" />
+    <Compile Include="Manageassistants.cs" />
+    <Compile Include="Managebimar.cs" />
+    <Compile Include="Managedoctors.cs" />
+    <Compile Include="Manageformerbimar.cs" />
+    <Compile Include="Managesahamdaran.cs" />
+    <Compile Include="monshi_login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monshi_login_form.Designer.cs">
+      <DependentUpon>monshi_login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="private_monshi_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="private_monshi_form.Designer.cs">
+      <DependentUpon>private_monshi_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sahamdar.cs" />
+    <Compile Include="SaveLoadManageAppointments_WriteReadAll.cs" />
+    <Compile Include="SaveLoadManageAppointments_WriteReadAll_assistants.cs" />
+    <Compile Include="SaveLoadManagebimar_WriteReadAll.cs" />
+    <Compile Include="SaveLoadManagedatetimesdrhoseini_WriteReadAll.cs" />
+    <Compile Include="SaveLoadManagedoctors_WriteReadAll.cs" />
+    <Compile Include="SaveLoadManageformerbimar_WriteReadAll.cs" />
+    <Compile Include="SaveLoadManagesahamdaran_WriteReadAll.cs" />
+    <Compile Include="takmiliinformationbydoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="takmiliinformationbydoctor.Designer.cs">
+      <DependentUpon>takmiliinformationbydoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testform.Designer.cs">
+      <DependentUpon>testform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminloginform.resx">
+      <DependentUpon>adminloginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_options.resx">
+      <DependentUpon>admin_options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bimar form.resx">
+      <DependentUpon>bimar form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bimarinformationbyassistant.resx">
+      <DependentUpon>bimarinformationbyassistant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bimarinformationbydoctor.resx">
+      <DependentUpon>bimarinformationbydoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_the_darsad_of_sahamdaran.resx">
+      <DependentUpon>change_the_darsad_of_sahamdaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorassistant.resx">
+      <DependentUpon>doctorassistant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctors_private_form.resx">
+      <DependentUpon>doctors_private_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginbimarsforvisiting.resx">
+      <DependentUpon>loginbimarsforvisiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form_of_doctors.resx">
+      <DependentUpon>login_form_of_doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monshi_login_form.resx">
+      <DependentUpon>monshi_login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="private_monshi_form.resx">
+      <DependentUpon>private_monshi_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="takmiliinformationbydoctor.resx">
+      <DependentUpon>takmiliinformationbydoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testform.resx">
+      <DependentUpon>testform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentistry %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabir-khab-kelid.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
