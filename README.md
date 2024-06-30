@@ -1,2 +1,2 @@
-# IUT
-This repository includes my major activities in the university
+# AP
+This repository includes my final project in AP course with C#
